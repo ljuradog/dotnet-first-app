@@ -16,7 +16,7 @@ namespace Taller1.Models
         [Required(ErrorMessage = "Debe ingresar un numero de telefono")]
         [Display(Name = "Telefono")]
         [DataType(DataType.PhoneNumber)]
-        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Debe ingresar un número de teléfono válido")]
+        [RegularExpression(@"^\d*$", ErrorMessage = "Debe ingresar un número de teléfono válido")]
         public string Phone { get; set; }
 
         [Required]
